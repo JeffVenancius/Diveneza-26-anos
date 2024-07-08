@@ -294,6 +294,12 @@ form {
 
 .submit_input {
 	cursor: pointer;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.submit_input img {
+	width: 24px;
 }
 
 #dados_footer h3 {
@@ -319,7 +325,7 @@ form {
 	padding:0;
 	color: white;
 	display: flex;
-	height: 80px;
+	height: 128px;
 	align-items: center;
 }
 
