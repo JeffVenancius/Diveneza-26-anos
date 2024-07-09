@@ -326,7 +326,6 @@ margin-bottom: 32px;
 		height: 128px;
 		align-items: center;
 	}
-
 	a {
 		font-size: 26px;
 		margin-left: 12px;
@@ -488,6 +487,12 @@ header {
 			#disclaimer_p {
 				font-size: 3vw !important;
 			}
+			#end_footer {
+				justify-content: center;
+			}
+			#end_footer p {
+				margin: auto;
+			}
 		}
 		@media (max-width: 460px) {
 			.registro {
@@ -554,6 +559,10 @@ header {
 			}
 			#end_footer {
 				flex-direction: column;
+			}
+			#dados_footer {
+				display: flex;
+				align-items: start;
 			}
 			#end_footer p {
 				text-align: center;
