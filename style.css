@@ -62,6 +62,7 @@ header div h1 {
 	min-height: 1000px;
 	padding-bottom: 32px;
 	flex-basis: auto;
+	gap: 32px;
 }
 
 #cadastro div {
@@ -69,7 +70,7 @@ header div h1 {
 	border-radius: 40px;
 }
 
-#cadastro p {
+.header_cadastro p, #disclaimer_p {
 	font-weight: 400;
 	font-size: 32px;
 	text-align: center;
@@ -162,41 +163,35 @@ margin-bottom: 32px;
 		color: #aaa;
 	}
 
-	.submit_input, .outside_btn {
+	.submit_input {
 		height: 80px;
-		width: 80%;
+		width: 60%;
 		font-weight: 600;
 		margin-left: auto;
 		margin-right: auto;
 		background-color: #25d366;
 		outline: none;
 		border: none;
-		border: 3px solid black;
+		border: 2px solid #222;
 		border-radius: 64px;
 		font-size: 24px;
 	}
 
-	.outside_btn {
+	.submit_input {
 		display: flex;
 		justify-content: center;
-	}
-
-	.submit_input {
 		height: 60px;
-		width: 95%;
 		margin: auto;
 		align-items: center;
 		text-align: center;
-		font-size: 22px;
-		line-height: 20%;
+		font-size: 16px;
 	}
 
-	#cadastro #disclaimer_p {
-		/* background-color: red; */
+	#disclaimer_p {
 		color: #eee;
 		margin-bottom: auto;
 		margin-top: 10%;
-		font-size: 16px;
+		font-size: 22px;
 	}
 
 
@@ -215,12 +210,6 @@ margin-bottom: 32px;
 	}
 
 
-
-	#disclaimer_p  span{
-		color: #25d366;
-		font-weight: 800;
-		margin-right:8px;
-	}
 
 	.description p {
 		/* background-color: green; */
@@ -321,6 +310,7 @@ margin-bottom: 32px;
 		margin-top: 0;
 		font-weight: 200;
 		font-size: calc(14px + 0.8vw);
+		text-decoration: none;
 	}
 
 	#dados_footer {
@@ -367,7 +357,7 @@ margin-bottom: 32px;
 			.tec_desc {
 				margin-left: 1%;
 			}
-			#cadastro .registro {
+			.registro {
 				margin-top: 32px;
 				padding: 32px;
 				width: 35vw;
@@ -375,17 +365,15 @@ margin-bottom: 32px;
 				height: 480px;
 				min-height: 420px;
 			}
-			#cadastro .registro #disclaimer_p {
+			#disclaimer_p {
 				margin-top: 1vw;
+				font-size: 14px;
 			}
 			.text_input_ {
 				height: 64px;
 			}
-			#cadastro .registro .outside_btn {
+			.submit_input {
 				height: 64px;
-			}
-			#cadastro .registro .submit_input {
-				height: 48px;
 				font-size: 1.8vw;
 			}
 			#cadastro .header_cadastro {
@@ -407,11 +395,15 @@ margin-bottom: 32px;
 				background-repeat: no-repeat;
 				background-position: 20%;
 			}
+			.submit_input {
+				width: 80%;
+				font-size: 1.6vw;
+			}
 
 		}
 
 
-		@media (max-width: 856px) {
+		@media (max-width: 982px) {
 			#dados_footer {
 				flex-direction: column;
 				align-items: center;
@@ -420,6 +412,10 @@ margin-bottom: 32px;
 			.description p {
 				width: 60vw;
 			}
+header {
+	background-position: bottom right;
+	background-size: 60% !important;
+}
 			header img {
 				height: 40vw;
 			}
@@ -459,33 +455,42 @@ margin-bottom: 32px;
 				width: 100%;
 			}
 
-			#cadastro .registro {
-				min-height: 480px;
+			.text_input_ {
+				height: 12vw;
+				min-height: 40px;
+				margin-bottom: 4vw;
+				width: 100%;
+				box-sizing: border-box;
+			}
+			.registro {
+				min-height: 540px;
 				width: 80vw;
 				/* margin-left: 1vw; */
 				/* margin-right: 1vw; */
 			}
-			#cadastro .registro .submit_input {
-				height: 48px;
-				font-size: 16px;
-			}
 			#tec_title {
 				padding: 0;
 			}
-			#cadastro .registro .outside_btn {
-				height: 12vw;
+			.submit_input {
+				height: 10vw;
+				width: 60%;
+				font-size: 2.6vw;
 			}
-			#cadastro .registro .submit_input {
-				height: 80%;
-				font-size: 4vw;
+			.submit_input img {
+				width: 4vw;
+				margin:0;
+				margin-left: 1vw;
 			}
 			#socials {
 				display: flex;
 				flex-direction: row;
 			}
+			#disclaimer_p {
+				font-size: 3vw !important;
+			}
 		}
 		@media (max-width: 460px) {
-			#cadastro .registro {
+			.registro {
 				min-width: 0;
 				width:80vw;
 				padding:16px;
@@ -493,7 +498,7 @@ margin-bottom: 32px;
 				min-height: 260px;
 				height: 100vw;
 			}
-			#cadastro .registro h2 {
+			.registro h2 {
 				font-size: calc(6px + 5vw);
 			}
 			.text_input_ {
@@ -503,7 +508,7 @@ margin-bottom: 32px;
 				width: 100%;
 				box-sizing: border-box;
 			}
-			#cadastro .registro .submit_input {
+			.submit_input {
 				font-size: 4vw;
 			}
 			form {
@@ -513,15 +518,15 @@ margin-bottom: 32px;
 			.submit_input img {
 				width: 6vw;
 			}
-			#cadastro .registro .outside_btn {
+			.submit_input {
 				width: 80%;
 				height: 15vw;
 			}
-			#cadastro .registro #disclaimer_p {
+			#disclaimer_p {
 				font-size: 4vw;
 				margin-top: 16px;
 			}
-			#cadastro .registro h2 {
+			.registro h2 {
 				font-size: 6vw;
 			}
 			#cadastro {
