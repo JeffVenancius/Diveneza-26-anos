@@ -411,12 +411,8 @@ margin-bottom: 32px;
 			.description p {
 				width: 60vw;
 			}
-header {
-	background-position: bottom right;
-	background-size: 60% !important;
-}
 			header img {
-				height: 40vw;
+				height: 30vw;
 			}
 			header div h1 {
 				font-size: 4vw;
@@ -427,10 +423,10 @@ header {
 			}
 			header {
 				height: 100vw;
-				background-position: center bottom;
-				background-size: 100%;
+				background-position: bottom right;
+				background-size: 70%;
 			}
-			#cadastro p {
+			#cadastro p, .tec_desc p {
 				font-size: 5vw;
 			}
 			.receba, .receba_part_2, .bold__underline_white {
@@ -569,15 +565,15 @@ header {
 				margin: auto;
 				margin-left: 2vw;
 				margin-right: 2vw;
-				font-size: 6vw;
+				font-size: 4vw;
 			}
-	a {
-		font-size: 8vw;
-		margin-left: 4vw;
-	}
-	#socials {
-		margin-left: auto;
-	}
+			a {
+				font-size: 6vw;
+				margin-left: 4vw;
+			}
+			#socials {
+				margin-left: auto;
+			}
 		}
 
 		/* .tec_desc { */
