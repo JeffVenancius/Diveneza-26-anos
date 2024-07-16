@@ -19,7 +19,7 @@
 
 body {
 	background-color: #eee;
-	font-family: "Poppins", sans-serif;
+	font-family: "AvenirLTStd-Book", sans-serif;
 	font-weight: 100;
 	font-style: normal;
 	height: 100vh;
@@ -36,16 +36,16 @@ header div h1 {
 	font-weight: 400;
 	font-family: "Brastika Extra Light", sans-serif;
 	/* font-size: 96px; */
-	font-size: 8vh;
+	font-size: 48px;
 	margin: 0;
-	height: 9vh;
+	height: 54px;
 }
 
 header {
 	display: flex;
 	flex-direction: column;
 	height: 60vh;
-	max-height: 1200px;
+	min-height: 500px;
 	justify-content: start;
 }
 
@@ -63,11 +63,13 @@ header img {
 
 #logo_26 {
 	height: 15vh;
+	min-height: 128px;
 }
 
 
 #glass_header {
 	height: 15vh;
+	min-height: 128px;
 	margin: auto;
 }
 
@@ -76,8 +78,9 @@ header div p {
 	font-weight: 400;
 	/* font-size: 30px; */
 	font-size: 2.6vh;
+	font-size: 18px;
 	margin: 0;
-	width: 55vh;
+	width: 55%;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -114,31 +117,38 @@ header div {
 	background-color: #AAAAAAAA;
 	display: flex;
 	flex-direction: column;
-	min-height: 1000px;
-	padding-bottom: 32px;
+	/* min-height: 800px; */
+	/* padding-bottom: 32px; */
 	flex-basis: auto;
-	gap: 32px;
+	gap: 16px;
+	height: 80%;
+	min-height: 750px;
 }
 
-#cadastro div {
+#cadastro .registro {
 	margin: auto;
+	margin-top: 0;
 	border-radius: 40px;
+	min-height: 0;
+	width: 300px;
 }
 
 .header_cadastro p, #disclaimer_p {
 	font-weight: 400;
-	font-size: 32px;
+	/* font-size: 2.6vh; */
+	font-size: 26px;
 	text-align: center;
 }
 
 .bold__underline_white {
 	display: inline;
-	font-size:  32px;
+	font-size:  26px;
 	color: #eee;
 }
 
 .bold__underline_green {
 	display: inline;
+	font-family: "FontsFree-Net-AvenirLTStd-Heavy", sans-serif;
 	/* font-size:  32px; */
 	color: #58bd68;
 }
@@ -150,8 +160,12 @@ header div {
 
 #cadastro .header_cadastro {
 	flex-grow: 0;
-	margin-left: 25%;
-	margin-right: 25%;
+	margin: auto;
+	/* margin-left: 25%; */
+	/* margin-right: 25%; */
+	margin-top:0;
+	margin-bottom:0;
+	width: 35%;
 	/* width: 50%; */
 }
 
@@ -162,7 +176,7 @@ margin-bottom: 32px;
 } */
 
 	.receba, .receba_part_2 {
-		font-size:  32px;
+		font-size:  26px;
 		font-weight: 400;
 	}
 
@@ -178,14 +192,16 @@ margin-bottom: 32px;
 		align-items: center;
 		padding: 32px;
 		/* height: 80%; */
+		margin-top: 0;
 		width: 500px;
+		min-height: 900px;
 	}
 
 
 	.registro h2 {
 		margin: auto;
 		text-align: center;
-		font-size: 30px;
+		font-size: 18px;
 		/* width: 60%; */
 		color: #eee;
 	}
@@ -203,10 +219,10 @@ margin-bottom: 32px;
 
 	.text_input_ {
 		background-color: #eee;
-		height: 60px;
-		margin-bottom: 32px;
+		height: 40px;
+		margin-bottom: 16px;
 		padding-left: 16px;
-		font-size: 16px;
+		font-size: 12px;
 		font-weight: 600;
 		outline: none;
 		border: none;
@@ -219,34 +235,27 @@ margin-bottom: 32px;
 	}
 
 	.submit_input {
-		height: 80px;
-		width: 60%;
+		height: 60px;
+		width: 80%;
 		font-weight: 600;
-		margin-left: auto;
-		margin-right: auto;
 		background-color: #25d366;
-		outline: none;
-		border: none;
 		border: 2px solid #222;
 		border-radius: 64px;
-		font-size: 24px;
-	}
-
-	.submit_input {
+		font-family: "AvenirLTStd-Heavy", sans-serif;
 		display: flex;
 		justify-content: center;
-		height: 60px;
+		height: 50px;
 		margin: auto;
 		align-items: center;
 		text-align: center;
-		font-size: 16px;
+		font-size: 12px;
 	}
 
 	#disclaimer_p {
 		color: #eee;
 		margin-bottom: auto;
 		margin-top: 10%;
-		font-size: 22px;
+		font-size: 12px;
 	}
 
 
@@ -412,30 +421,37 @@ margin-bottom: 32px;
 			.tec_desc {
 				margin-left: 1%;
 			}
-			.registro {
-				margin-top: 32px;
+			#cadastro .registro {
+				/* margin-top: 32px; */
 				padding: 32px;
-				width: 35vw;
+				width: 300px;
 				/* min-width: 160px; */
-				height: 480px;
-				min-height: 420px;
+				/* height: 460px; */
+				min-height: 300px;
+				padding-bottom: 16px;
+				/* margin: 0; */
+				margin-top: 1vw;
 			}
 			#disclaimer_p {
-				margin-top: 1vw;
-				font-size: 14px;
+				margin-top: 1.5vw;
+				font-size: 12px;
+				width: 100%;
 			}
 			.text_input_ {
-				height: 64px;
+				height: 44px;
 			}
 			.submit_input {
+				margin-top: 16px;
 				height: 64px;
 				font-size: 1.8vw;
 			}
 			#cadastro .header_cadastro {
 				flex-grow: 0;
-				margin-left: 10%;
-				margin-right: 10%;
-				/* width: 50%; */
+				/* margin-left: 10%; */
+				/* margin-right: 10%; */
+				width: 35%;
+				margin: auto;
+				margin-bottom: 0;
 			}
 
 			.description p {
@@ -451,9 +467,19 @@ margin-bottom: 32px;
 				background-position: 20%;
 			}
 			.submit_input {
-				width: 80%;
-				font-size: 1.6vw;
+				width: 90%;
+				font-size: 16px;
 			}
+			.submit_input img {
+				width: 18px;
+			}
+			#cadastro {
+				height: 60vw;
+				max-height: 700px;
+				/* min-height: 700px; */
+			}
+.header_cadastro p, .header_cadastro div, .bold__underline_white {
+	font-size: 1.6vw;
 		}
 
 
@@ -481,11 +507,11 @@ margin-bottom: 32px;
 		height: 25vw;
 	}
 	#glass_header {
-		height: 25vw;
+		height: 20vw;
 		margin: auto;
 	}
 	header {
-		height: 90vw;
+		height: 75vw;
 	}
 			/* header div { */
 			/* 	margin-left: 5%; */
@@ -495,14 +521,18 @@ margin-bottom: 32px;
 			/* 	height: 100vw; */
 			/* } */
 			#cadastro p, .tec_desc p {
-				font-size: 5vw;
+				font-size: 2.8vw;
+			}
+			#cadastro #disclaimer_p {
+				font-size: 1.8vw;
+				margin-top: 2vw;
 			}
 			.receba, .receba_part_2, .bold__underline_white {
-				font-size: 5vw;
+				font-size: 2.8vw;
 			}
-			.receba {
-				padding: 1vw;
-			}
+			/* .receba { */
+				/* padding: 1vw; */
+			/* } */
 			.tecnology div {
 				width: 100%;
 			}
@@ -513,34 +543,52 @@ margin-bottom: 32px;
 			.tecnology {
 				flex-direction: column;
 			}
+			.header_cadastro div {
+				font-size: 2.8vw;
+			}
+			#cadastro .header_cadastro {
+				width: 70%;
+				margin-top: 0;
+			}
 
 			.tecnology img {
 				width: 100%;
 			}
 
 			.text_input_ {
-				height: 12vw;
+				height: 8vw;
 				min-height: 40px;
-				margin-bottom: 4vw;
+				margin-bottom: 2vw;
 				width: 100%;
+				border-radius: 2vw;
+				border: 2px solid black;
+				font-size: 2.4vw;
 				box-sizing: border-box;
 			}
-			.registro {
-				min-height: 540px;
-				width: 80vw;
+			#cadastro .registro {
+				min-height: 300px;
+				height: 50vw;
+				width: 45vw;
 				/* margin-left: 1vw; */
 				/* margin-right: 1vw; */
 			}
+	.registro h2 {
+		margin: auto;
+		text-align: center;
+		font-size: 2.6vw;
+		/* width: 60%; */
+		color: #eee;
+	}
 			#tec_title {
 				padding: 0;
 			}
 			.submit_input {
-				height: 10vw;
-				width: 60%;
-				font-size: 2.6vw;
+				height: 8vw;
+				width: 100%;
+				font-size: 2.4vw;
 			}
 			.submit_input img {
-				width: 4vw;
+				width: 2.8vw;
 				margin:0;
 				margin-left: 1vw;
 			}
@@ -549,7 +597,7 @@ margin-bottom: 32px;
 				flex-direction: row;
 			}
 			#disclaimer_p {
-				font-size: 3vw !important;
+				font-size: 3vw;
 			}
 			#end_footer {
 				justify-content: center;
@@ -557,51 +605,83 @@ margin-bottom: 32px;
 			#end_footer p {
 				margin: auto;
 			}
+	#cadastro {
+		height: 80vw;
+		min-height: 520px;
+		padding-bottom: 5vw;
+		/* max-height: 7400px; */
 		}
+	}
 		@media (max-width: 460px) {
-			.registro {
+			#cadastro {
+				height: 145vw;
+				min-height: 300px;
+				/* padding: 32px; */
+				padding-left: 0;
+				padding-right: 0;
+			}
+			#cadastro .registro {
 				min-width: 0;
-				width:80vw;
+				width:70vw;
 				padding:16px;
 				padding-bottom: 32px;
-				min-height: 260px;
-				height: 100vw;
+				/* min-height: 800px; */
+				height: 75vw;
+				min-height: 140px;
 			}
 			.registro h2 {
 				font-size: calc(6px + 5vw);
 			}
+			#cadastro .header_cadastro {
+				width: 100%;
+			}
+			.header_cadastro div {
+				font-size: 4.2vw;
+			}
+			#cadastro p, .receba, .receba_part_2, .bold__underline_white {
+				font-size: 4.2vw;
+			}
+			/* #cadastro .header_cadastro { */
+			/* 	/1* margin: 1vw; *1/ */
+			/* } */
 			.text_input_ {
 				height: 12vw;
-				min-height: 40px;
+				min-height: 20px;
 				margin-bottom: 4vw;
-				width: 100%;
+				width: 80%;
+				margin: auto;
+				margin-top: 2vw;
+				margin-bottom: 2vw;
+				font-size: 3vw;
+				border: 0.8vw solid black;
 				box-sizing: border-box;
 			}
 			.submit_input {
 				font-size: 4vw;
+				margin-top: 2vw;
 			}
 			form {
 				margin: 0;
 				width: 100%;
 			}
 			.submit_input img {
-				width: 6vw;
+				width: 4vw;
 			}
 			.submit_input {
-				width: 80%;
-				height: 15vw;
+				width: 60%;
+				height: 12vw;
+				font-size: 3vw;
 			}
-			#disclaimer_p {
-				font-size: 4vw;
-				margin-top: 16px;
+			#cadastro #disclaimer_p {
+				font-size: 3vw;
 			}
 			.registro h2 {
-				font-size: 6vw;
+				font-size: 4vw;
 			}
-			#cadastro {
-				/* height: 10px; */
-				min-height: 0;
-			}
+			/* #cadastro { */
+			/* 	/1* height: 10px; *1/ */
+			/* 	min-height: 0; */
+			/* } */
 			.description p {
 				margin: auto;
 				margin-left: 2vw;
