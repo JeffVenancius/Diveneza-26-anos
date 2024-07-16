@@ -45,7 +45,8 @@ header {
 	display: flex;
 	flex-direction: column;
 	height: 20vh;
-	min-height: 450px;
+	min-height: 350px;
+	padding-bottom: 32px;
 	justify-content: start;
 }
 
@@ -124,11 +125,11 @@ header div {
 	/* padding-bottom: 32px; */
 	flex-basis: auto;
 	gap: 16px;
-	height: 40%;
+	height: 650px;
 	/* min-height: 0; */
 	padding: 0;
 	padding-bottom: 32px;
-	min-height: 600px;
+	min-height: 650px;
 }
 
 #cadastro .registro {
@@ -172,7 +173,7 @@ header div {
 	/* margin-right: 25%; */
 	margin-top:0;
 	margin-bottom:0;
-	width: 560px;
+	width: 500px;
 	/* width: 50%; */
 }
 
@@ -439,7 +440,7 @@ margin-bottom: 32px;
 				width: 300px;
 				/* min-width: 160px; */
 				/* height: 460px; */
-				min-height: 300px;
+				min-height: 320px;
 				padding-bottom: 16px;
 				/* margin: 0; */
 				margin-top: 1vw;
@@ -463,7 +464,8 @@ margin-bottom: 32px;
 				flex-grow: 0;
 				/* margin-left: 10%; */
 				/* margin-right: 10%; */
-				width: 35%;
+				width: 30vw;
+				min-width: 200px;
 				margin: auto;
 				margin-bottom: 0;
 			}
@@ -562,7 +564,7 @@ margin-bottom: 32px;
 				font-size: 2.8vw;
 			}
 			#cadastro .header_cadastro {
-				width: 70%;
+				width: 50%;
 				margin-top: 0;
 			}
 
@@ -584,6 +586,7 @@ margin-bottom: 32px;
 				min-height: 300px;
 				height: 50vw;
 				width: 45vw;
+				/* padding-bottom: 10vw; */
 				/* margin-left: 1vw; */
 				/* margin-right: 1vw; */
 			}
@@ -621,8 +624,8 @@ margin-bottom: 32px;
 				margin: auto;
 			}
 	#cadastro {
-		height: 80vw;
-		min-height: 500px;
+		height: 85vw;
+		min-height: 520px;
 		max-height: 8000px;
 		padding-bottom: 5vw;
 		/* max-height: 7400px; */
@@ -650,13 +653,19 @@ margin-bottom: 32px;
 				font-size: calc(6px + 5vw);
 			}
 			#cadastro .header_cadastro {
-				width: 90%;
+				width: 75%;
+				margin-top: 5vw;
 			}
 			.header_cadastro div {
 				font-size: 4.2vw;
 			}
 			#cadastro p, .receba, .receba_part_2, .bold__underline_white {
 				font-size: 4.2vw;
+				width: 100%;
+				margin: auto;
+			}
+			.receba {
+				margin-top: 5vw;
 			}
 			/* #cadastro .header_cadastro { */
 			/* 	/1* margin: 1vw; *1/ */
